@@ -7,7 +7,7 @@
 
 
 
-var funcionario = 'desenvolvedor back end';
+let funcionario = 'desenvolvedor back end';
 
 switch (funcionario) {
     case 'gerente':
