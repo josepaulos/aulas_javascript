@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function exemploEvento() {
+            alert("o evento foi diparado ")
+        }
+        function mouseOver(){
+            document.getElementById("exemploEvento").style.color = "red";
+        }
+        
+        function mouseOut(){
+            document.getElementById("exemploEvento").style.color = "red";
+        }
+
+        function getNome() {
+            var nome = document.getElementById("nome").value;
+        }
+    </script>
+
+    <p>Clique no botao abaixo</p>
+    <button onclick="exemploEvento()">Clique Aqui</button>
+
+    <h1 id="exemploEvento" onmouseover="mouseOver()" onmouseover="mouseOut()">Exemplo</h1>
+
+    <form method="post">
+        <input type="submit" name="nome" id="nome">
+    
+    
+        </form>
+        <input type="submit" onclick="getNome()" value="Enviar">
+
+
+
+    
+</body>
+</html>

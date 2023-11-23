@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ola usando seletores </h1>
+    <ul>
+        <li>Java</li>
+        <li>Java</li>
+        <li>Java</li>
+        <li>Java</li>
+        <li>Java</li>
+        <li>Java</li>
+        <li>Java</li>
+    </ul>
+
+    <div id= "conteudo" class="divConteudo"></div>
+    <div name = "conteudo"></div>
+    <div class="divvConteudo"></div>
+
+    <script>
+        elemento0 = document.getElementsByTagName("li")[0];
+        elemento0.style.color = "blue";
+
+        elemento1 = document.getElementsByTagName("li")[1];
+        elemento0.style.backgroud = "red";
+        
+        elementodiv = document.getElementById("conteudo")
+        elementodiv.innerText = "<p>texto</p>"
+
+        elementoclass = document.getElementsByClassName("divvConteudo")
+        elementoclass.innerHTML = "<b>novotexto</b>"
+
+    </script>
+
+</body>
+</html>
